@@ -18,7 +18,7 @@
     	<div class="card mx-auto mt-5 bg-secondary" style="width: 50%;">
     		<div class="card-body">
     			<h3 class="text-center text-white">Search App</h3>
-    			<form class="mt-3" action="">
+    			<form class="mt-3" action="search">
     				<div class="form-group">
     					<input style="width: 100%;" type="text" name="querybox" placeholder="search your query here..." />
     				</div>
