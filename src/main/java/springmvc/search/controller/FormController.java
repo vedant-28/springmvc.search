@@ -19,6 +19,7 @@ public class FormController {
 	public String handleForm(@ModelAttribute("student") Student student) {
 		
 		System.out.println(student);
+		System.out.println(student.getAddress());
 		return "success";
 	}
 	

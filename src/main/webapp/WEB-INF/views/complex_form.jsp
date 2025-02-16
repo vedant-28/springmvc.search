@@ -21,7 +21,7 @@
 		<div class="container mt-4">
 
 		<div class="row">
-			<div class="col-md-6 offset-md-3">
+			<div class="col-md-8 offset-md-2">
 				<div class="card">
 					<div class="card-body">
 						<h3 class="text-center">Complex Form</h3>
@@ -44,7 +44,7 @@
 
 							<div class="form-group">
 								<label for="exampleInputEmail">Your DOB</label> 
-								<input name="date" type="text" class="form-control"
+								<input name="date" type="date" class="form-control"
 									   id="exampleInputEmail" aria-describedby="emailhelp"
 									   placeholder="dd/mm/yyyy">
 							</div>
@@ -54,7 +54,7 @@
 								<select name="subjects" class="form-control"
 									    id="exampleFormControlSelect1" multiple>
 									   <option>Java</option>
-									   <option>Phython</option>
+									   <option>Python</option>
 									   <option>C++</option>
 									   <option>Spring</option>
 									   <option>Hibernate</option>
@@ -83,8 +83,28 @@
 										<option value="normalstudent">Normal Student</option>
 									</select>
 							</div>
+							
+							<div class="card">
+								<div class="card-body">
+									<p>Your address</p>
+									<div class="form-group">
+										<input type="text" 
+											   class="form-control" 
+											   placeholder="Enter street"
+											   name="address.street" 
+										/>
+									</div>
+									<div class="form-group">
+										<input type="text" 
+											   class="form-control" 
+											   placeholder="Enter city"
+											   name="address.city" 
+										/>
+									</div>
+								</div>
+							</div>
 
-							<div class="container text-center">
+							<div class="container text-center mt-1">
 								<button type="submit" class="btn btn-primary">Submit</button>
 							</div>
 

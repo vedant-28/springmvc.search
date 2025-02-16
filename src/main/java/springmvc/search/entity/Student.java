@@ -14,6 +14,8 @@ public class Student {
 	private String gender;
 	private String type;
 	
+	private Address address;
+	
 	public String getName() {
 		return name;
 	}
@@ -50,10 +52,16 @@ public class Student {
 	public void setType(String type) {
 		this.type = type;
 	}
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 	
 	@Override
 	public String toString() {
 		return "Student [name=" + name + ", id=" + id + ", date=" + date + ", subjects=" + subjects + ", gender="
-				+ gender + ", type=" + type + "]";
+				+ gender + ", type=" + type + ", address=" + address + "]";
 	}
 }
