@@ -27,5 +27,14 @@
   		<bean class="org.springframework.web.multipart.support.StandardServletMultipartResolver"
   			  id="filterMultipartResolver">
   		</bean>
+  		
+  		<mvc:interceptors>
+  			<mvc:interceptor>
+  				<mvc:mapping path="/home"/>
+  				<!--<bean name="myInterceptor" class="springmvc.search.interceptor.MyInterceptor"></bean> -->
+  				<!--<bean name="webRequestInterceptor" class="org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapter"></bean> -->
+  				<bean name="myInterceptor"  class="springmvc.search.interceptor.MyInterceptor"/>
+  			</mvc:interceptor>
+  		</mvc:interceptors>
 		
 </beans>

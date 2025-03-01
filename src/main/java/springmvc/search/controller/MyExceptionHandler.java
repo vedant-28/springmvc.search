@@ -10,21 +10,21 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class MyExceptionHandler {
 	
 	@ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
-	@ExceptionHandler
+	@ExceptionHandler(Exception.class)
 	public String exceptionHandler(Model model) {
 		model.addAttribute("message", "Generic exception");
 		return "exception";
 	}
 	
 	@ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
-	@ExceptionHandler
+	@ExceptionHandler(NullPointerException.class)
 	public String nullPointerExceptionHandler(Model model) {
 		model.addAttribute("message", "Null pointer exception...");
 		return "exception";
 	}
 	
 	@ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
-	@ExceptionHandler
+	@ExceptionHandler(NumberFormatException.class)
 	public String numberFormatExceptionHandler(Model model) {
 		model.addAttribute("message", "Number format exception...");
 		return "exception";
